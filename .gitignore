@@ -3,10 +3,10 @@
 /local.properties
 .DS_Store
 /build
+.idea
 /captures
 .externalNativeBuild
 .gradle/
-.idea/
 proguardMappings/
 app/libs/
 app/src/main/res/drawable/
