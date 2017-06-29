@@ -14,20 +14,20 @@ import android.widget.TextView
 import android.widget.Toast
 import com.gin.kotlin4android.R
 import com.gin.kotlin4android.book.data.Person
+import com.gin.kotlin4android.custom.Utils
 import kotlinx.android.synthetic.main.activity_book.*
 
 class BookActivity : AppCompatActivity() {
 
+    val TAG = Utils.TAG
     //一部分是静态方法的情况 : 将方法用 companion object { } 包裹即可
     companion object {
         fun getIntent(context: Context): Intent = Intent(context, BookActivity::class.java)
-    }
 
+    }
     val items = listOf(
             "1", "2"
     )
-
-    val TAG = "-----gin"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book)

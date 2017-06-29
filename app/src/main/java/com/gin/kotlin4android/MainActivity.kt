@@ -1,11 +1,14 @@
 package com.gin.kotlin4android
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.gin.kotlin4android.book.BookActivity
+import com.gin.kotlin4android.custom.SugarActivity
+import com.gin.kotlin4android.custom.Utils
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    val TAG = "-----gin: "
+    val TAG = Utils.TAG
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -31,9 +34,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         message.text = " kotlin 4 Android"
         btn1.text = "书中练习"
         btn1.setOnClickListener(this)
-        btn2.text = "自定义练习"
+        btn2.text = "Sugar练习"
         btn2.setOnClickListener {
-            toast("自定义练习")
+            toast(btn2.text.toString())
+            startActivity(Intent(this, SugarActivity::class.java))
         }
     }
 

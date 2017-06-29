@@ -19,6 +19,8 @@
         <activity android:name=".book.recycler.RecyclerActivity"/>
         <activity android:name=".book.BookActivity">
         </activity>
+        <activity android:name=".custom.SugarActivity">
+        </activity>
     </application>
 
 </manifest>
