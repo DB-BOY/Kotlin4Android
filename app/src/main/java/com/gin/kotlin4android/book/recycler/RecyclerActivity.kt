@@ -1,4 +1,4 @@
-package com.gin.kotlin4android.recycler
+package com.gin.kotlin4android.book.recycler
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -46,8 +46,8 @@ class RecyclerActivity : AppCompatActivity() {
         var recycler = findViewById(R.id.recycler) as RecyclerView
         recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = RecyclerAdapter(items)
+
+        Log.i("------", "00000000")
         
-        
-        Log.println(1,"iiiiiiii","ladlfalsdfasdf")
     }
 }

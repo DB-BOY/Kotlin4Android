@@ -1,4 +1,4 @@
-package com.gin.kotlin4android.data
+package com.gin.kotlin4android.book.data
 
 /**
  * Created by wang.lichen on 2017/6/26.

@@ -1,4 +1,4 @@
-package com.gin.kotlin4android.recycler
+package com.gin.kotlin4android.book.recycler
 
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
