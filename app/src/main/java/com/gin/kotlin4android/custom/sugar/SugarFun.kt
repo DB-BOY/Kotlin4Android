@@ -30,13 +30,14 @@ class SugarFun {
      */
     fun function() {
 
-        Utils.log("nonReturn():  ${nonReturn()}")
-        Utils.log("getAge():  ${getAge()}")
-        Utils.log("add(3,1,1):  ${add(3, 0, 1)}")
-        Utils.log("outStr(3,asd,true):  ${outStr(3, "asd", true)}")
-        Utils.log("outStr(3,dada):  ${outStr(3, "dada")}")
-        Utils.log("outStr(3,true):  ${outStr(3, bo1 = true)}")
-        Utils.log("varFun(3,4,5,6,7,8,9):  ${varFun(3, 4, 5, 6, 7, 8, 9)}")
+//        Utils.log("nonReturn():  ${nonReturn()}")
+//        Utils.log("getAge():  ${getAge()}")
+//        Utils.log("add(3,1,1):  ${add(3, 0, 1)}")
+//        Utils.log("outStr(3,asd,true):  ${outStr(3, "asd", true)}")
+//        Utils.log("outStr(3,dada):  ${outStr(3, "dada")}")
+//        Utils.log("outStr(3,true):  ${outStr(3, bo1 = true)}")
+//        Utils.log("varFun(3,4,5,6,7,8,9):  ${varFun(3, 4, 5, 6, 7, 8, 9)}")
+        innerFun()
 
     }
 
@@ -67,7 +68,9 @@ class SugarFun {
     fun add(x1: Int = 0, x2: Int = 0, x3: Int = 0): Int {
         return x1 + x2 + x3
     }
-
+    //简化,单一表达式写法
+    //   fun add(x1: Int = 0, x2: Int = 0, x3: Int = 0): Int = x1 + x2 + x3
+    
     fun outStr(x1: Int = 0, str1: String = "", bo1: Boolean = false): String {
         return "x1: $x1   str1: $str1  bo1: $bo1"
     }
@@ -83,4 +86,32 @@ class SugarFun {
         return sum
     }
 
+    /**
+     * 闭包
+     * 函数内函数
+     */
+    fun innerFun() {
+        var arg = 1
+
+        fun inFun() {
+            arg++
+            Utils.log("in arg : $arg")
+        }
+
+        Utils.log("out arg : $arg")
+        inFun()
+        inFun()
+        Utils.log("out arg : $arg")
+
+        test
+    }
+
+    var flag = true
+    var test = if (flag) {
+        Utils.log("true")
+    } else {
+        Utils.log("false")
+    }
+    
+    
 }

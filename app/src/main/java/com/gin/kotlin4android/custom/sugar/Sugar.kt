@@ -29,7 +29,7 @@ class Sugar {
 //        x()
         /*String 操作  */
 //        str()
-//        operator()
+//        SugarOperator()
 //        SugarStatement()
         SugarFun()
     }
@@ -79,42 +79,6 @@ class Sugar {
         """
         log(str)
 
-    }
-
-    /**
-     * 更多运算符
-     * http://kotlinlang.org/docs/reference/operator-overloading.html
-     *
-     * <table>
-     *  <tr><td>Expression</td>	<td>Translated to</td> </tr>
-     *  <tr>
-     *  <td>a + b</td>	    <td>a.plus(b) </td>
-     * </tr>
-     * <tr>
-     * <td>a - b</td>	    <td>a.minus(b) </td>
-     * </tr>
-     * <tr>
-     * <td>a * b</td>	    <td>a.times(b) </td>
-     * </tr>
-     * <tr>
-     * <td>a / b</td>	    <td>a.div(b) </td>
-     * </tr>
-     * <tr>
-     * <td>a % b</td>	    <td>a.rem(b), a.mod(b) (deprecated) </td>
-     * </tr>
-     * <tr>
-     * <td>a..b</td>	        <td>a.rangeTo(b) </td>
-     * </tr>
-     *  </table>
-     */
-    fun operator() {
-        var a = 1
-        var b = 2
-        var sum = a + b
-        log(sum.toString())
-        sum = 0
-        sum = a.plus(b)
-        log(sum.toString())
     }
 
 }

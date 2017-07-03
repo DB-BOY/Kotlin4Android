@@ -45,6 +45,7 @@ class BookActivity : AppCompatActivity() {
         recycler.layoutManager = LinearLayoutManager(this)
         var mainAdapter = MainAdapter(items)
         recycler.adapter = mainAdapter
+
     }
 
 
@@ -59,7 +60,13 @@ class BookActivity : AppCompatActivity() {
     class MainAdapter(val items: List<String>) : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
         override fun onBindViewHolder(holder: MainAdapter.ViewHolder, position: Int) {
             holder.textView.text = items[position]
-            holder.textView.setOnClickListener { }
+            holder.textView.setOnClickListener {
+                onClick(position)
+            }
+        }
+
+        private fun onClick(position: Int) {
+
         }
 
         override fun getItemCount(): Int = items.size
@@ -74,15 +81,4 @@ class BookActivity : AppCompatActivity() {
             }
         }
     }
-
-    inner class MyClick : View.OnClickListener {
-        override fun onClick(v: View) {
-//            switch(v.id){
-//            }
-
-
-        }
-    }
-
-
 }
