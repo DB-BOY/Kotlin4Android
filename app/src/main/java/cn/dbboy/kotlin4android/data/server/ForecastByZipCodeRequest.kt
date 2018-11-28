@@ -1,10 +1,9 @@
 package cn.dbboy.kotlin4android.book.data.server
 
-import com.google.gson.Gson
 import java.net.URL
 
 /**
- * Created by wang.lichen on 2017/7/3.
+ * Created by db.boy on 2017/7/3.
  */
 class ForecastByZipCodeRequest(val zipCode: Long, val gson: Gson = Gson()) {
 

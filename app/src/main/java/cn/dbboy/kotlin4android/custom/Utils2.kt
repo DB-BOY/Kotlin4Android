@@ -3,7 +3,7 @@ package cn.dbboy.kotlin4android.custom
 import android.content.Context
 
 /**
- * Created by wang.lichen on 2017/6/29.
+ * Created by db.boy on 2017/6/29.
  *
  * 部分静态方法
  * 方法用 companion object { } 包裹

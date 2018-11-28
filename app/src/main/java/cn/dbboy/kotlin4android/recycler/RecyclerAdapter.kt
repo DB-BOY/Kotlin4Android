@@ -1,11 +1,10 @@
 package cn.dbboy.kotlin4android.book.recycler
 
-import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
 import android.widget.TextView
 
 /**
- * Created by wang.lichen on 2017/6/28.
+ * Created by db.boy on 2017/6/28.
  */
 
 class RecyclerAdapter(val items: List<String>): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){

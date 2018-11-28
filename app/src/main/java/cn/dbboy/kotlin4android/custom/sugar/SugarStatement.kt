@@ -3,7 +3,7 @@ package cn.dbboy.kotlin4android.custom.sugar
 import cn.dbboy.kotlin4android.custom.Utils
 
 /**
- * Created by wang.lichen on 2017/6/30.
+ * Created by db.boy on 2017/6/30.
  */
 
 class SugarStatement {

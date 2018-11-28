@@ -5,7 +5,7 @@ import android.util.Log
 import android.widget.Toast
 
 /**
- * Created by wang.lichen on 2017/6/29.
+ * Created by db.boy on 2017/6/29.
  *
  * 全是静态方法的写法
  * 类名 改为 object 类名 即可

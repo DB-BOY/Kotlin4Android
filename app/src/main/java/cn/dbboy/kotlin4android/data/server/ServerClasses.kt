@@ -1,7 +1,7 @@
 package cn.dbboy.kotlin4android.book.data.server
 
 /**
- * Created by wang.lichen on 2017/7/3.
+ * Created by db.boy on 2017/7/3.
  */
 data class ForecastResult(val city: City, val list: List<Forecast>)
 

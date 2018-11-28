@@ -3,7 +3,7 @@ package cn.dbboy.kotlin4android.custom.sugar
 import cn.dbboy.kotlin4android.custom.Utils
 
 /**
- * Created by wang.lichen on 2017/7/3.
+ * Created by db.boy on 2017/7/3.
  */
 class SugerOperator {
     constructor() {

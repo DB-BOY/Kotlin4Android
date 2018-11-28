@@ -1,7 +1,7 @@
 package cn.dbboy.kotlin4android.book.data
 
 /**
- * Created by wang.lichen on 2017/6/26.
+ * Created by db.boy on 2017/6/26.
  */
 open class Animal(name : String )
 

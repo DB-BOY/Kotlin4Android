@@ -3,7 +3,7 @@ package cn.dbboy.kotlin4android.log
 import com.gin.kotlin4android.book.recycler.data.L
 
 /**
- * Created by wang.lichen on 2017/6/28.
+ * Created by db.boy on 2017/6/28.
  */
 object LoggerPrinter {
 

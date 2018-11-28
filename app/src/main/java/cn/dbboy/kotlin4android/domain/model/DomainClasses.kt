@@ -1,7 +1,7 @@
 package cn.dbboy.kotlin4android.book.domain.model
 
 /**
- * Created by wang.lichen on 2017/7/3.
+ * Created by db.boy on 2017/7/3.
  */
 data class ForecastList(val id: Long, val city: String, val country: String,
                         val dailyForecast: List<Forecast>) {
